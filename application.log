@@ -1,0 +1,187 @@
+2025-03-24 11:57:43 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 17548 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 11:57:43 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 11:57:43 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 11:57:55 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 11:57:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1483)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1324)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:678)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:647)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 12 common frames omitted
+2025-03-24 11:57:56 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 14.741 seconds (process running for 16.703)
+2025-03-24 11:57:56 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 11:58:01 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2025-03-24 11:58:02 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Failed to check/redeclare auto-delete queue(s).
+2025-03-24 11:58:07 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] WARN  o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+2025-03-24 11:58:07 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] ERROR o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Failed to check/redeclare auto-delete queue(s).
+2025-03-24 11:59:08 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 31592 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 11:59:08 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 11:59:08 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 11:59:17 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 11:59:19 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 12.391 seconds (process running for 13.813)
+2025-03-24 11:59:19 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 12:03:02 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]ï¿½-ï¿½Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-03-24 12:05:30 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 10668 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 12:05:30 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 12:05:30 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 12:05:40 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 12:05:42 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 13.148 seconds (process running for 14.744)
+2025-03-24 12:05:42 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 12:06:08 [http-nio-8080-exec-1] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 13:54:19 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 2412 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 13:54:19 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 13:54:19 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 13:54:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 13:54:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1483)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1324)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:678)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:647)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 12 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336)
+	... 17 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:296)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-03-24 13:54:31 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 13.442 seconds (process running for 15.685)
+2025-03-24 13:54:31 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 13:54:46 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 6188 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 13:54:46 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 13:54:46 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 13:54:57 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 13:54:58 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 13.489 seconds (process running for 14.763)
+2025-03-24 13:54:58 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 14:02:02 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR o.s.a.r.l.SimpleMessageListenerContainerï¿½-ï¿½Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:632)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:671)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:644)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:533)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1484)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2268)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:467)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:451)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1972)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1936)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1483)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1324)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:140)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:136)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:406)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:678)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:647)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:593)
+	... 15 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:552)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:336)
+	... 20 common frames omitted
+Caused by: java.io.EOFException: null
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:296)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:199)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:687)
+	... 1 common frames omitted
+2025-03-24 14:14:52 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 25948 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 14:14:52 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 14:14:52 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 14:15:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 14:15:06 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 15.332 seconds (process running for 16.956)
+2025-03-24 14:15:06 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 14:36:48 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPoolï¿½-ï¿½HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s135ms392µs300ns).
+2025-03-24 14:38:31 [http-nio-8080-exec-1] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 14:49:46 [http-nio-8080-exec-4] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 14:58:08 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Starting AddressBookAppApplication using Java 18.0.2.1 with PID 12784 (C:\Users\adity\Desktop\Spring\AddressBookApp\target\classes started by root in C:\Users\adity\Desktop\Spring\AddressBookApp)
+2025-03-24 14:58:08 [restartedMain] DEBUG c.e.A.AddressBookAppApplicationï¿½-ï¿½Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-24 14:58:08 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½The following 1 profile is active: "dev"
+2025-03-24 14:58:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfigurationï¿½-ï¿½spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-24 14:58:22 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Started AddressBookAppApplication in 15.928 seconds (process running for 16.946)
+2025-03-24 14:58:22 [restartedMain] INFO  c.e.A.AddressBookAppApplicationï¿½-ï¿½Address Book App Started
+2025-03-24 14:59:58 [http-nio-8080-exec-1] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 15:00:12 [http-nio-8080-exec-5] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Saving new contact: com.example.AddressBookApp.dto.AddressBookDTO@ef4a730
+2025-03-24 15:00:12 [http-nio-8080-exec-5] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½✅ Contact saved successfully with ID: 19
+2025-03-24 15:00:13 [http-nio-8080-exec-6] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 15:01:02 [http-nio-8080-exec-9] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Saving new contact: com.example.AddressBookApp.dto.AddressBookDTO@45e827c
+2025-03-24 15:01:02 [http-nio-8080-exec-9] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½✅ Contact saved successfully with ID: 20
+2025-03-24 15:01:05 [http-nio-8080-exec-10] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.
+2025-03-24 15:04:32 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolverï¿½-ï¿½Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.AddressBookApp.controller.AddressBookController.createContact(com.example.AddressBookApp.dto.AddressBookDTO) with 2 errors: [Field error in object 'addressBookDTO' on field 'name': rejected value [abhishek]; codes [Pattern.addressBookDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressBookDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@524c8e71,^[A-Z][a-zA-Z\s]*$]; default message [Name must start with a capital letter and contain only letters and spaces]] [Field error in object 'addressBookDTO' on field 'phone': rejected value [11111111111]; codes [Pattern.addressBookDTO.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressBookDTO.phone,phone]; arguments []; default message [phone],[Ljakarta.validation.constraints.Pattern$Flag;@524c8e71,^\d{10}$]; default message [Phone number must be exactly 10 digits]] ]
+2025-03-24 15:04:36 [http-nio-8080-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolverï¿½-ï¿½Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.AddressBookApp.controller.AddressBookController.createContact(com.example.AddressBookApp.dto.AddressBookDTO) with 2 errors: [Field error in object 'addressBookDTO' on field 'name': rejected value [abhishek]; codes [Pattern.addressBookDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressBookDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@524c8e71,^[A-Z][a-zA-Z\s]*$]; default message [Name must start with a capital letter and contain only letters and spaces]] [Field error in object 'addressBookDTO' on field 'phone': rejected value [11111111111]; codes [Pattern.addressBookDTO.phone,Pattern.phone,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressBookDTO.phone,phone]; arguments []; default message [phone],[Ljakarta.validation.constraints.Pattern$Flag;@524c8e71,^\d{10}$]; default message [Phone number must be exactly 10 digits]] ]
+2025-03-24 15:04:46 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolverï¿½-ï¿½Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.AddressBookApp.controller.AddressBookController.createContact(com.example.AddressBookApp.dto.AddressBookDTO): [Field error in object 'addressBookDTO' on field 'name': rejected value [abhishek]; codes [Pattern.addressBookDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [addressBookDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@524c8e71,^[A-Z][a-zA-Z\s]*$]; default message [Name must start with a capital letter and contain only letters and spaces]] ]
+2025-03-24 15:04:58 [http-nio-8080-exec-7] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Saving new contact: com.example.AddressBookApp.dto.AddressBookDTO@3d7edd12
+2025-03-24 15:04:58 [http-nio-8080-exec-7] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½✅ Contact saved successfully with ID: 21
+2025-03-24 15:05:00 [http-nio-8080-exec-9] INFO  c.e.A.service.AddressBookServiceï¿½-ï¿½Fetching all contacts from the database.

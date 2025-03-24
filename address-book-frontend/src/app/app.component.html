@@ -1,0 +1,30 @@
+<h1>Address Book</h1>
+
+<!-- Add Contact Form -->
+<form (ngSubmit)="addContact()" #contactForm="ngForm">
+  <input [(ngModel)]="newContact.name" name="name" placeholder="Name" required />
+  <input [(ngModel)]="newContact.phone" name="phone" placeholder="Phone" required />
+  <input [(ngModel)]="newContact.email" name="email" placeholder="Email" required />
+  <button type="submit" [disabled]="contactForm.invalid">Add Contact</button>
+</form>
+
+<!-- Display Contact List -->
+<table *ngIf="contacts.length > 0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.phone }}</td>
+      <td>{{ contact.email }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- No Contacts Found Message -->
+<p *ngIf="contacts.length === 0">No contacts available.</p>
